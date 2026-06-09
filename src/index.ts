@@ -28,7 +28,6 @@ const DefaultSetupOptions: SetupOptions = {
 
 function setup(setupOptions?: SetupOptions): void {
   setupOptions = setupOptions ?? DefaultSetupOptions;
-  // setDefaultSetupOptions(setupOptions, DefaultSetupOptions);
 
   [quit, write].forEach((cmd) => {
     let options = cmd.options;

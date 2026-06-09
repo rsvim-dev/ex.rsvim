@@ -78,10 +78,11 @@ There are a lot of ex commands, which cannot be done all at once. This section t
 - 🚧 Working in Progress
 - 🔴 Missing
 
-| Status | Command | Alias | Description                       | Since Version |
-| ------ | ------- | ----- | --------------------------------- | ------------- |
-| 🔰     | `quit`  | `q`   | Quit editor                       | v0.1.x        |
-| 🔰     | `write` | `w`   | Save current buffer to filesystem | v0.1.x        |
+| Status | Command     | Alias | Description                       | Since Version |
+| ------ | ----------- | ----- | --------------------------------- | ------------- |
+| 🔰     | `quit`      | `q`   | Quit editor                       | v0.1          |
+| 🔰     | `write`     | `w`   | Save current buffer to filesystem | v0.1          |
+| 🔰     | `writeQuit` | `wq`  | Save current buffer and quit      | v0.2          |
 
 ## Contribution
 

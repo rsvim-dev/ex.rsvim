@@ -52,7 +52,13 @@ ex.setup();
 
 The `setup` function accepts an optional object, by default is:
 
-https://github.com/rsvim/ex.rsvim/blob/1f09822850f2d70af712c7d62eb5b08c84c647e2/src/index.ts?plain=1#L32-L36
+<!-- https://github.com/rsvim/ex.rsvim/blob/47447301c8ca909171f8e41f03761392763eac99/src/index.ts?plain=1#L25-L27 -->
+
+```typescript
+const DefaultSetupOptions: SetupOptions = {
+  force: true,
+};
+```
 
 You can pass your custom options when setup:
 

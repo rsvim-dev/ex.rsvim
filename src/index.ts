@@ -1,5 +1,6 @@
 import quit from "./quit.js";
 import write from "./write.js";
+import writeQuit from "./writeQuit.js";
 
 export type ExAttributes = {
   bang: boolean;

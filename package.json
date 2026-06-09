@@ -23,7 +23,6 @@
     "tsc": "tsc"
   },
   "devDependencies": {
-    "rsvim-types": "file:../rsvim",
     "typescript": "^5.9.3"
   }
 }

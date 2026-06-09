@@ -30,11 +30,9 @@ const DefaultSetupOptions: SetupOptions = {
 function setup(setupOptions?: SetupOptions): void {
   setupOptions = setupOptions ?? DefaultSetupOptions;
 
-  [quit, write].forEach((cmd) => {
-    let options = cmd.options;
-    if (typeof setupOptions.force === "boolean") {
-      options.force = setupOptions.force;
-    }
+  [quit, write, writeQuit].forEach((cmd) => {
+    var options: ExOptions = { ...cmd.options };
+    Object.assign(options, setupOptions);
     Rsvim.cmd.create(cmd.name, cmd.callback, cmd.attributes, options);
   });
 }

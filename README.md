@@ -87,17 +87,6 @@ There are a lot of ex commands, which cannot be done all at once. This section t
 
 Contributions are always welcomed :)
 
-### Project Structure
-
-```
-|-lib    // Compiled javascript files
-|-src    // Typescript source files
-|-types  // Typescript type declarations
-```
-
-> [!WARNING]
-> Please **DO NOT** manually edit files under `lib` and `types`.
-
 ### Development Environment
 
 Please setup the development environment with:
@@ -110,6 +99,16 @@ Here are some useful tools:
 
 - `npm run prettier`: Format source code.
 - `npm run tsc`: Compile typescript to javascript and `.d.ts` declarations.
+
+The project structure is:
+
+```
+|-lib    // Compiled javascript files
+|-src    // Typescript source files
+|-types  // Typescript type declarations
+```
+
+Please **DO NOT** manually edit files under `lib` and `types`.
 
 ## Supporting the Project
 

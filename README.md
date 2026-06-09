@@ -63,7 +63,7 @@ const DefaultSetupOptions: SetupOptions = {
 You can pass your custom options when setup:
 
 ```javascript
-import ex from "@rsvim/ex.rsvim";
+import ex from "ex.rsvim";
 ex.setup({
   // Your configurations here...
 });

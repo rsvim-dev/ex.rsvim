@@ -27,13 +27,13 @@ const DefaultSetupOptions: SetupOptions = {
   force: true,
 };
 
-function setup(setupOpts?: SetupOptions): void {
-  setupOpts = setupOpts ?? DefaultSetupOptions;
+function setup(opts?: SetupOptions): void {
+  opts = opts ?? DefaultSetupOptions;
 
   [quit, write, writeQuit].forEach((cmd) => {
-    var opts: Options = { ...cmd.options };
-    Object.assign(opts, setupOpts);
-    Rsvim.cmd.create(cmd.name, cmd.callback, cmd.attributes, opts);
+    var o: Options = { ...cmd.options };
+    Object.assign(o, opts);
+    Rsvim.cmd.create(cmd.name, cmd.callback, cmd.attributes, o);
   });
 }
 

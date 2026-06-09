@@ -1,5 +1,5 @@
 import type { ExDefinition } from ".";
-import { RsvimCmd } from "rsvim-types";
+import type { RsvimCmd } from "rsvim-types";
 
 async function write(ctx: RsvimCmd.CommandContext): Promise<void> {
   const bufId = ctx.currentBufferId;

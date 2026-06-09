@@ -22,14 +22,6 @@ export type SetupOptions = {
   force: boolean;
 };
 
-// function setDefaultSetupOptions(options: object, defaultOptions: SetupOptions) {
-//   for (const [key, val] of Object.entries(defaultOptions)) {
-//     if (!Object.hasOwn(options, key)) {
-//       Object.defineProperty(options, key, { value: val, writable: false });
-//     }
-//   }
-// }
-
 const DefaultSetupOptions: SetupOptions = {
   force: true,
 };

@@ -1,11 +1,11 @@
-import type { ExDefinition } from ".";
+import type { Definition } from ".";
 
 async function quit(): Promise<void> {
   Rsvim.rt.exit();
   Rsvim.cmd.echo("Bye");
 }
 
-const _default: ExDefinition = {
+const _default: Definition = {
   name: "quit",
   callback: quit,
   attributes: { bang: false, nargs: "0" },

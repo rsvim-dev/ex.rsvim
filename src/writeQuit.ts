@@ -1,4 +1,4 @@
-import type { ExDefinition } from ".";
+import type { Definition } from ".";
 import type { RsvimCmd } from "rsvim-types";
 
 export async function writeQuit(ctx: RsvimCmd.CommandContext): Promise<void> {
@@ -15,7 +15,7 @@ export async function writeQuit(ctx: RsvimCmd.CommandContext): Promise<void> {
   }
 }
 
-const _default: ExDefinition = {
+const _default: Definition = {
   name: "writeQuit",
   callback: writeQuit,
   attributes: { bang: false, nargs: "0" },

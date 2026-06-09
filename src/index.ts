@@ -12,7 +12,7 @@ export type Options = {
   alias?: string;
 };
 
-export type ExDefinition = {
+export type Definition = {
   name: string;
   callback: (ctx: any) => Promise<void>;
   attributes: Attributes;

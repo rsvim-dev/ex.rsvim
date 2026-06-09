@@ -6,7 +6,7 @@ export type Options = {
     force: boolean;
     alias?: string;
 };
-export type ExDefinition = {
+export type Definition = {
     name: string;
     callback: (ctx: any) => Promise<void>;
     attributes: Attributes;
@@ -15,7 +15,7 @@ export type ExDefinition = {
 export type SetupOptions = {
     force: boolean;
 };
-declare function setup(setupOptions?: SetupOptions): void;
+declare function setup(opts?: SetupOptions): void;
 declare const _default: {
     setup: typeof setup;
 };

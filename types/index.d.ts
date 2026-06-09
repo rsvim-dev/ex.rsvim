@@ -1,16 +1,16 @@
-export type ExAttributes = {
+export type Attributes = {
     bang: boolean;
     nargs: "0" | "1" | "*" | "+" | "?";
 };
-export type ExOptions = {
+export type Options = {
     force: boolean;
     alias?: string;
 };
 export type ExDefinition = {
     name: string;
     callback: (ctx: any) => Promise<void>;
-    attributes: ExAttributes;
-    options: ExOptions;
+    attributes: Attributes;
+    options: Options;
 };
 export type SetupOptions = {
     force: boolean;

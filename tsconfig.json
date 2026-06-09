@@ -30,7 +30,7 @@
     "strictNullChecks": true,
     "suppressExcessPropertyErrors": false,
     "suppressImplicitAnyIndexErrors": false,
-    "typeRoots": ["@rsvim/types"],
+    "typeRoots": ["rsvim-types"],
     "target": "esnext",
     "useUnknownInCatchVariables": false,
     "useDefineForClassFields": true,

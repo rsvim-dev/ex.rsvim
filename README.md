@@ -1,7 +1,7 @@
 # ex.rsvim
 
-<a href="https://www.npmjs.com/package/ex.rsvim"><img alt="rsvim" src="https://img.shields.io/npm/v/ex.rsvim" /></a>
-<a href="https://github.com/rsvim/ex.rsvim/actions/workflows/ci.yml"><img alt="ci.yml" src="https://img.shields.io/github/actions/workflow/status/rsvim/ex.rsvim/ci.yml?branch=main&label=ci" /></a>
+<a href="https://www.npmjs.com/package/ex.rsvim"><img alt="npmjs" src="https://img.shields.io/npm/v/ex.rsvim" /></a>
+<a href="https://github.com/rsvim-dev/ex.rsvim/actions/workflows/ci.yml"><img alt="ci.yml" src="https://img.shields.io/github/actions/workflow/status/rsvim-dev/ex.rsvim/ci.yml?branch=main&label=ci" /></a>
 
 ## About
 
@@ -19,26 +19,26 @@ cd $HOME/.rsvim
 
 Then install with either `git` or `npm`:
 
-> Plugin version should be compatible with the Rsvim version, for example install `ex.rsvim 0.1.x` for `Rsvim 0.1.x`, `ex.rsvim 0.2.x` for `Rsvim 0.2.x` (or development branch if Rsvim didn't release v0.2 yet)
+> Plugin version is compatible with the Rsvim version, e.g. `ex.rsvim 0.1` for `Rsvim 0.1`.
 
 ### git
 
 ```bash
-# tag v0.2.1
-git clone --branch=v0.2.1 https://github.com/rsvim/ex.rsvim ex.rsvim
+# tag
+git clone --branch=v0.2.1 https://github.com/rsvim/ex.rsvim
 
-# main branch
-git clone --branch=main https://github.com/rsvim/ex.rsvim ex.rsvim
+# develop
+git clone --branch=main https://github.com/rsvim/ex.rsvim
 ```
 
 ### npm
 
 ```bash
-# version 0.2.1
+# specific version
 npm install ex.rsvim@0.2.1
 
 # latest version
-npm install @rsvim/ex.rsvim
+npm install ex.rsvim
 ```
 
 ## Setup
@@ -51,8 +51,6 @@ ex.setup();
 ```
 
 The `setup` function accepts an optional object, by default is:
-
-<!-- https://github.com/rsvim/ex.rsvim/blob/47447301c8ca909171f8e41f03761392763eac99/src/index.ts?plain=1#L25-L27 -->
 
 ```typescript
 const DefaultSetupOptions: SetupOptions = {
@@ -96,10 +94,11 @@ Please setup the development environment with:
 2. Run `mise i` to install python, node and other npm cli tools.
 3. Run `npm i` to install dependencies.
 
-Here are some useful tools:
+Here are some useful commands:
 
 - `npm run prettier`: Format source code.
 - `npm run tsc`: Compile typescript to javascript and `.d.ts` declarations.
+- `npm version major|minor|patch --no-git-tag-version`: Bump version (without creating a git tag).
 
 The project structure is:
 
@@ -120,4 +119,4 @@ If you like RSVIM, please consider sponsoring it. Your support encourages contri
 
 ## License
 
-Licensed under [Vim License](https://github.com/rsvim/ex.rsvim/blob/main/LICENSE.txt).
+Licensed under "Vim License".

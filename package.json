@@ -1,17 +1,17 @@
 {
   "name": "ex.rsvim",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Ex commands plugin for Rsvim text editor",
   "keywords": [
     "rsvim"
   ],
-  "homepage": "https://github.com/rsvim/ex.rsvim",
+  "homepage": "https://github.com/rsvim-dev/ex.rsvim",
   "bugs": {
-    "url": "https://github.com/rsvim/ex.rsvim/issues"
+    "url": "https://github.com/rsvim-dev/ex.rsvim/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rsvim/ex.rsvim.git"
+    "url": "git+https://github.com/rsvim-dev/ex.rsvim.git"
   },
   "license": "Vim",
   "author": "rsvim",
@@ -24,6 +24,6 @@
   },
   "devDependencies": {
     "rsvim-types": "^0.1.5",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   }
 }
